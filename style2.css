@@ -1,0 +1,110 @@
+*{
+ margin:0;
+ padding:0;
+font-family:cursive;
+}
+.banner{
+	width:100%;
+	height:100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(jt.jpg);
+	background-size:cover;
+	background-position:center;
+}
+.logo{
+	width:120px;
+	color:white;
+	font-size:28px;
+	cursor:pointer;
+}
+span{
+	color:#ea1538;
+}
+.navbar{
+	width:85%;
+	margin:auto;
+	padding:35px 0;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.navbar ul li{
+	list-style:none;
+	display:inline-block;
+	margin:0 20px;
+	position:relative;
+}
+.navbar ul li a{
+	text-decoration:none;
+	color:#40f5d4;
+	text-transform:uppercase;
+}
+.navbar ul li::after{
+	content:'';
+	height:3px;
+	width:0;
+	background:#ea1538;
+	position:absolute;
+	left:0;
+	bottom:-10px;
+	transition:0.5s;
+}
+.navbar ul li:hover::after{
+	width:100%;
+}
+.content{
+	width:100%;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	color:#c3e999;
+}
+.content p{
+	margin:20px auto;
+	font-weight:100;
+	line-height:25px;
+	color:#fff;
+}
+button{
+	width:200px;
+	padding:15px 0;
+	text-align:center;
+	margin:20px 10px;
+	border-radius:25px;
+	font-weight:bold;
+	border:2px solid #ea1538;
+	background:transparent;
+	background-color:#000000;
+	color:#fff;
+	cursor:pointer;
+	position:relative;
+	overflow:hidden;
+	transition:.3s;
+	
+}
+button:hover{
+	background:#ea1538;
+	transition:scale(1.3);
+	cursor:pointer;
+}
+button a{
+	color:white;
+	font-size:17px;
+	text-decoration:none;
+	font-weight:bold;
+	
+}
+button a:hover{
+	color:#000000;
+	transition:.3s;
+}
+
+<!----span{
+	background:#48aaa0;
+	height:0;
+	width:0%;
+	border-radius:25px;
+	position:absolute;
+	left:0;
+	bottom:0;
+}--->
